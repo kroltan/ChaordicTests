@@ -17,4 +17,6 @@ Já para a execução, é necessário ter um interpretador de Python 2.7 (Dispon
 
 - Coloque o arquivo `vcard.py` em qualquer pasta
 - Inicie uma sessão de console e navegue até o local onde está `vcard.py`
-- Digite o comando `python vcard.py <usuário Google> <senha Google> <planilha> <página> <quantidade de entradas a processar> <caminho de destino>`, substituindo os parâmetros indicados. (Dependendo da configuração de seu sistema, pode ser necessário usar um caminho absoluto para o interpretador Python)
+- Digite o comando abaixo, substituindo os parâmetros indicados. (Dependendo da configuração de seu sistema, pode ser necessário usar um caminho absoluto para o interpretador Python)
+
+    `python vcard.py <usuário Google> <senha Google> <planilha> <página> <quantidade de entradas a processar> <caminho de destino>`
