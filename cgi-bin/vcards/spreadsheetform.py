@@ -33,7 +33,7 @@ if formHasKeys(form, ["gUser", "gPass", "gSpread", "gWork", "FN", "EMAIL", "TEL"
            "email":form.getfirst("EMAIL", "N/A"), 
            "tel":form.getfirst("TEL", "N/A")}
     try:
-        server = gdata.spreadsheet.text_db.DatabaseClient(username=form.getfirst("gUser"), password=form.getfirst("gPass"))
+        server = gdata.spreadsheet.text_db.DatabaseClient(form.getfirst("gUser"), form.getfirst("gPass"))
         table = server.GetDatabases(None, form.getfirst("gSpread"))[0].GetTables(None, form.getfirst("gWork"))[0]
         record = table.AddRecord(vci)
         record.Push()
