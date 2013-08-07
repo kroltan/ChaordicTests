@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google Spreadsheet Info Inserter</title>
+		<style>
+			#content {
+				width: 			500px;
+				background: 	#ECF6CE;
+				margin: 		5px auto;
+				padding: 		5px 5px;
+				font-family: 	Arial, Helvetica, sans-serif;
+			}
+			h1 {
+				font-size: 		3em;
+				margin: 		0 0;
+				margin-left: 	5px;
+				margin-top: 	5px;
+				color: 			#071907;
+			}
+			form {
+				margin: 		5px 5px;
+				padding: 		0 0;
+				border: 		0 none;
+			}
+			input {
+				float: 			right;
+				width: 			284px;
+			}
+			input[type="submit"] {
+				width: 			245px;
+			}
+			input.login {
+				width: 			139px;
+			}
+			div.line {
+				height: 		40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<h1>Spreadhseet Form</h1><br />
+			<form action="spreadsheetform.py" method="post">
+				<div class="line">Login: <input class="login" type="email" name="gUser" placeholder="Google Username" autofocus /><input class="login" type="password" name="gPass" placeholder="Google Password" /></div>
+				<div class="line">Spreadsheet: <input class="login" type="text" name="gSpread" placeholder="Spreadsheet" /><input class="login" type="text" name="gWork" placeholder="Worksheet" /></div>
+				<div class="line">Name: <input type="text" name="FN" /></div>
+				<div class="line">Email: <input type="email" name="EMAIL" /></div>
+				<div class="line">Telephone: <input type="tel" name="TEL" /></div>
+				<div class="line"><input type="submit" name="task" value="Submit" /></div>
+			</form>
+		</div>
+	</body>
+</html>
