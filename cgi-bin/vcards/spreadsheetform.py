@@ -27,7 +27,7 @@ cgitb.enable()
 form = cgi.FieldStorage()
 print "Content-type: text/html"
 print ""
-printHtml("form.html")
+printHtml("index.html")
 if formHasKeys(form, ["gUser", "gPass", "gSpread", "gWork", "FN", "EMAIL", "TEL"]):
     vci = {"fn":form.getfirst("FN", "Anonymous"), 
            "email":form.getfirst("EMAIL", "N/A"), 
